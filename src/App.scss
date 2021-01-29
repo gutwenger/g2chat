@@ -1,0 +1,728 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mv-5 {
+    margin: 5px 0;
+}
+
+.mv-10 {
+    margin: 10px 0;
+}
+
+.mv-15 {
+    margin: 15px 0;
+}
+
+.p-5 {
+    padding: 5px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.ph-5 {
+    padding: 0 5px;
+}
+
+.ph-10 {
+    padding: 0 10px;
+}
+
+.ph-15 {
+    padding: 0 15px;
+}
+
+.ph-20 {
+    padding: 0 20px;
+}
+
+.pv-5 {
+    padding: 5px 0;
+}
+
+.pv-10 {
+    padding: 10px 0;
+}
+
+.pv-15 {
+    padding: 15px 0;
+}
+
+.pv-20 {
+    padding: 20px 0;
+}
+
+
+.login {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .loginLogo {
+        box-sizing: border-box;
+        margin: 20px 0;
+
+        .loginLogo-h1 {
+            font-size: 70px;
+            letter-spacing: -3px;
+            color: #1f7a8c;
+        }
+    }
+
+    .loginForm {
+        box-sizing: border-box;
+        height: fit-content;
+        width: 350px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .loginForm-h1 {
+            font-size: 20px;
+            font-weight: 300;
+            letter-spacing: -1px;
+            color: #5bc0be;
+        }
+
+        .loginForm-errorbox {
+            box-sizing: border-box;
+            list-style-position: inside;
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px 5px;
+            border-radius: 3px;
+            border: 1px solid #ea3546;
+            background-color: #ea354605;
+
+            .loginForm-error {
+                font-size: 13px;
+                color: #ea3546;
+            }
+        }
+    }
+}
+
+.dashboard {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.sidebar {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    padding: 0 10px;
+    background-color: white;
+    background: linear-gradient(90deg, rgba(91,192,190,0.1) 0%, rgba(255,255,255,0.5) 100%,);
+    //border-right: 1px solid rgb(238, 238, 238);
+    //box-shadow: 2px 0px 5px lightgray;
+    display: flex;
+    flex-direction: column;
+
+    .sidebar-btn {
+        display: none;
+    }
+    
+    .sidebarLogo {
+        box-sizing: border-box;
+        height: fit-content;
+        width: 100%;
+        padding: 20px 10px;
+        display: flex;
+        align-items: center;
+
+        i {
+            font-size: 38px;
+            color: #5bc0be;
+            margin-right: 10px;
+        }
+
+        .sidebarLogo-h1 {
+            box-sizing: border-box;
+            font-size: 35px;
+            font-weight: 700;
+            text-align: left;
+            letter-spacing: -2px;
+            color: #5bc0be;
+        }
+    }
+
+    .sidebarCreateChannel-form {
+        box-sizing: border-box;
+        height: fit-content;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #ffffffAA;
+        box-shadow: 0px 2px 5px lightgray;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .sidebarCreateChannel-h3 {
+            box-sizing: border-box;
+            width: 100%;
+            margin-bottom: 10px;
+            text-align: left;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            color: #5bc0be;
+        }
+    }
+
+    .sidebarLoginCard {
+        box-sizing: border-box;
+        height: fit-content;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #ffffffAA;
+        box-shadow: 0px 2px 5px lightgray;
+        display: flex;
+        flex-direction: column;
+
+        .sidebarLoginCard-h2 {
+            margin-bottom: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            color: #5bc0be;
+        }
+
+        .sidebarLoginCard-p {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid lightgray;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .sidebarLoginCard-p:hover {
+            background-color: white;
+        }
+
+        .sidebarLoginCard-btngrp {
+            box-sizing: border-box;
+            width: 100%;
+            margin-top: 10px;
+            display: flex;
+            justify-content: flex-end;
+
+            .sidebarLoginCard-btn {
+                outline: none;
+                box-sizing: border-box;
+                margin-left: 5px;
+                padding: 8px 10px;
+                border-radius: 3px;
+                border: 1px solid lightgray;
+                background-color: transparent;
+                color: darkgray;
+                cursor: pointer;
+            }
+
+            .sidebarLoginCard-btn:hover {
+                border: 1px solid #5bc0be;
+                color: #5bc0be;
+            }
+
+            .sidebarLoginCard-btn-reset:hover {
+                border: 1px solid #d81159;
+                color: #d81159;
+            }
+        }
+
+        .sidebarLoginCard-form {
+
+            .sidebarLoginCard-form-input {
+                outline: none;
+                box-sizing: border-box;
+                width: 100%;
+                padding: 10px;
+                border-radius: 3px;
+                border: 1px solid lightgray;
+                background-color: transparent;
+                font-size: 12px;
+                font-weight: 300;
+            }
+
+            .sidebarLoginCard-form-input:hover, .sidebarLoginCard-form-input:focus {
+                border: 1px solid #5bc0be;
+            }
+
+            .sidebarLoginCard-form-btngrp {
+                box-sizing: border-box;
+                width: 100%;
+                margin-top: 10px;
+                display: flex;
+                justify-content: flex-end;
+
+                .sidebarLoginCard-form-btn {
+                    outline: none;
+                    box-sizing: border-box;
+                    margin-left: 5px;
+                    padding: 8px 10px;
+                    border-radius: 3px;
+                    border: 1px solid lightgray;
+                    background-color: transparent;
+                    color: darkgray;
+                    cursor: pointer;
+                }
+    
+                .sidebarLoginCard-form-btn:hover {
+                    border: 1px solid #5bc0be;
+                    color: #5bc0be;
+                }
+            }
+
+            .sidebarLoginCard-form-error {
+                margin-top: 3px;
+                font-size: 10px;
+                color: #d81159;
+            }
+        }
+    }
+
+    .channelList {
+        box-sizing: border-box;
+        height: calc(100% - 360px);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .channelListTitle {
+            box-sizing: border-box;
+            padding: 10px 5px;
+            margin: 5px 0;
+
+            .channelListTitle-h2 {
+                font-size: 20px;
+                letter-spacing: -1px;
+                color: #5bc0be;
+            }
+        }
+
+        .channelListCon {
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+            padding: 0 10px;
+            border-radius: 5px;
+            overflow-y: scroll;
+
+            .channelCard {
+                box-sizing: border-box;
+                height: fit-content;
+                width: 100%;
+                margin-bottom: 7px;
+                padding: 15px 10px;
+                border-radius: 5px;
+                background-color: #ffffffAA;
+                box-shadow: 0px 2px 5px lightgrey;
+                cursor: pointer;
+                
+                .channelCard-p {
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #5bc0be;
+                }
+            }
+
+            .channelCard:hover {
+                box-shadow: 0px 2px 5px darkgray;
+
+                .channelCard-p {
+                    color: #5bc0be;
+                }
+            }
+        }
+
+        .channelListCon::-webkit-scrollbar {
+            display: none;
+        }
+        
+    }
+}
+
+.main {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+
+    .noSelectedChannel {
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .noSelectedChannel-img {
+            max-height: 300px;
+            width: 300px;
+        }
+
+        .noSelectedChannel-h3 {
+            margin-top: 15px;
+            font-size: 25px;
+            font-weight: 300;
+            color: #5bc0be;
+        }
+    }
+
+    .conversations {
+        box-sizing: border-box;
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 61px 1fr 60px;
+
+        .conversations-title {
+            box-sizing: border-box;
+            padding: 0px 20px;
+            //box-shadow: 0px 2px 5px lightgray;
+            font-size: 15px;
+            color: #5bc0be;
+            display: flex;
+            align-items: center;
+        }
+
+        .conversations-dialog {
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+            padding: 5px 10px;
+            overflow-y: scroll;
+
+            .userJoin {
+                box-sizing: border-box;
+                width: 100%;
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .userJoin-user, .userJoin-timestamp {
+                    font-size: 11px;
+                    font-weight: 700;
+                    color: darkgray;
+                }
+            }
+
+            .messageCard {
+                box-sizing: border-box;
+                height: fit-content;
+                width: fit-content;
+                min-width: 100px;
+                max-width: 80%;
+                margin-bottom: 5px;
+
+                .messageCard-upper {
+                    box-sizing: border-box;
+                    height: fit-content;
+                    width: 100%;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    box-shadow: 2px 2px 5px lightgray;
+
+                    .messageCard-user {
+                        font-size: 12px;
+                        font-weight: 700;
+                    }
+
+                    .messageCard-text {
+                        padding: 5px 0;
+                        font-size: 15px;
+                        font-weight: 300;
+                    }
+
+                    .messageCard-img {
+                        box-sizing: border-box;
+                        max-height: 300px;
+                        width: 300px;
+                    }
+
+                    .messageCard-vid {
+                        box-sizing: border-box;
+                        min-width: 300px;
+                        max-width: 100%;
+                    }
+
+                    .messageCard-file{
+                        box-sizing: border-box;
+                        height: fit-content;
+                        width: 100%;
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: column;
+
+                        .messageCard-file-i {
+                            box-sizing: border-box;
+                            width: 100%;
+                            padding: 5px;
+                            font-size: 30px;
+                            text-align: center;
+                            color: darkgray;
+                        }
+
+                        .messageCard-file-word {
+                            color: #033da0;
+                        }
+
+                        .messageCard-file-ppt {
+                            color: #b92a1a;
+                        }
+
+                        .messageCard-file-xls {
+                            color: #006435;
+                        }
+
+                        .messageCard-file-pdf {
+                            color: #d81159;
+                        }
+
+                        .messageCard-file-normal {
+                            color: #f7d981;
+                        }
+
+                        .messageCard-file-p {
+                            box-sizing: border-box;
+                            max-width: 150px;
+                            margin-bottom: 5px;
+                            font-size: 11px;
+                            text-align: center;
+                            color: darkgray;
+                        }
+                    }
+
+                    .messageCard-timestamp {
+                        font-size: 11px;
+                        font-weight: 600;
+                        text-align: right;
+                        color: darkgray;
+                    }
+                }
+
+                .messageCard-upper:hover {
+                    background-color: #8ffdfb20;
+                }
+            }
+
+            .messageCard-user {
+                margin-left: auto;
+
+                .messageCard-upper {
+                    background-color: #8ffdfb20;
+                }
+
+                .messageCard-upper:hover {
+                    background-color: #fefefe;
+                }
+            }
+
+        }
+
+        .conversations-form {
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .conversations-form-inputfile {
+                display: none;
+            }
+
+            .conversations-form-inputfile-label {
+                box-sizing: border-box;
+                margin-right: 10px;
+                padding: 10px;
+                color: darkgray;
+                cursor: pointer;
+            }
+            
+            .conversations-form-inputfile-label:hover {
+                color: #5bc0be;
+            }
+
+            .conversations-form-grp {
+                box-sizing: border-box;
+                height: 100%;
+                width: 100%;
+                border-radius: 5px;
+                //border: 1px solid lightgray;
+                box-shadow: 2px 2px 5px lightgray;
+                display: flex;
+
+                .conversations-form-input {
+                    outline: none;
+                    box-sizing: border-box;
+                    height: 100%;
+                    width: 100%;
+                    padding: 10px;
+                    border: none;
+                    background-color: transparent;
+                    font-size: 13px;
+                }
+
+                .conversations-form-submit {
+                    outline: none;
+                    box-sizing: border-box;
+                    height: 100%;
+                    width: 50px;
+                    border: none;
+                    border-radius: 0 5px 5px 0;
+                    background-color: #5bc0be10;
+                    color: #5bc0be;
+                    cursor: pointer;
+                }
+
+                .conversations-form-submit:hover {
+                    background-color: #5bc0be;
+                    color: white;
+                }
+            }
+
+        }
+    }
+}
+
+//Components
+.button-01 {
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    background-color: transparent;
+    color: darkgray;
+    cursor: pointer;
+}
+
+.button-01:hover {
+    border: 1px solid #5bc0be;
+    color: #5bc0be;
+}
+
+.input-01 {
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    background-color: transparent;
+}
+
+.input-01:hover, .input-01:focus {
+    border: 1px solid #5bc0be;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .dashboard {
+        box-sizing: border-box;
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        width: 100vw;
+        padding: 0 10px;
+        background-color: white;
+
+        .sidebar-btn {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            height: 40px;
+            width: 40px;
+            box-sizing: border-box;
+            border-radius: 100%;
+            border: 2px solid #5bc0be;
+            background-color: #5bc0be;
+            font-size: 20px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .sidebar-btn:hover {
+            background-color: white;
+            color: #5bc0be;
+        }
+    }
+
+    .main {
+        .menuToggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            height: 40px;
+            width: 40px;
+            box-sizing: border-box;
+            border-radius: 100%;
+            border: 2px solid #5bc0be;
+            background-color: #5bc0be;
+            font-size: 20px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .menuToggle:hover {
+            background-color: white;
+            color: #5bc0be;
+        }
+
+        .conversations {
+
+            .conversations-title {
+                box-shadow: 2px 0px 5px lightgray;
+            }
+
+            .conversations-form {
+                box-shadow: -2px 0px 5px lightgray;
+            }
+        }
+    }
+}
