@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/g2chat/static/css/main.5f9eb3a0.chunk.css",
+    "main.js": "/g2chat/static/js/main.8c2f6701.chunk.js",
+    "main.js.map": "/g2chat/static/js/main.8c2f6701.chunk.js.map",
+    "runtime-main.js": "/g2chat/static/js/runtime-main.8bdfb3bb.js",
+    "runtime-main.js.map": "/g2chat/static/js/runtime-main.8bdfb3bb.js.map",
+    "static/js/2.782a1ef2.chunk.js": "/g2chat/static/js/2.782a1ef2.chunk.js",
+    "static/js/2.782a1ef2.chunk.js.map": "/g2chat/static/js/2.782a1ef2.chunk.js.map",
+    "index.html": "/g2chat/index.html",
+    "static/css/main.5f9eb3a0.chunk.css.map": "/g2chat/static/css/main.5f9eb3a0.chunk.css.map",
+    "static/js/2.782a1ef2.chunk.js.LICENSE.txt": "/g2chat/static/js/2.782a1ef2.chunk.js.LICENSE.txt",
+    "static/media/chatnow.b3198a05.png": "/g2chat/static/media/chatnow.b3198a05.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8bdfb3bb.js",
+    "static/js/2.782a1ef2.chunk.js",
+    "static/css/main.5f9eb3a0.chunk.css",
+    "static/js/main.8c2f6701.chunk.js"
+  ]
+}
